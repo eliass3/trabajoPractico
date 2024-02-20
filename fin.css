@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('Assets/imagenFin.jpg'); 
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: 550px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px; /* ajusta el margen superior */
+    margin-right: 10px; /* ajusta el margen derecho */
+    margin-bottom: 20px; /* ajusta el margen inferior */
+    margin-left: 10px; /* ajusta el margen izquierdo */
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .credits {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  

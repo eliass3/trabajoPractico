@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.puzzle-container {
+    position: relative;
+    width: 40vw;
+    height: 40vw;
+    margin: 10vh 0;
+}
+
+.puzzle-piece {
+    position: absolute;
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.puzzle-piece:hover {
+    transform: scale(1.1);
+    border-color: #666; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Piezas dentro del cuadro */
+.piece-1, .piece-2, .piece-3, .piece-4, .piece-5, .piece-6, .piece-7, .piece-8, .piece-9 {
+    width: 32%;
+    height: 32%;
+}
+
+.piece-1 { top: 0; left: 10; background-image: url('./Assets/img1.png'); }
+.piece-2 { top: 0; left: 34%; background-image: url('./Assets/img2.png'); }
+.piece-3 { top: 0; left: 68%; background-image: url('./Assets/img3.png'); }
+.piece-4 { top: 34%; left: 0; background-image: url('./Assets/img4.png'); }
+.piece-5 { top: 34%; left: 34%; background-image: url('./Assets/img5.png'); }
+.piece-6 { top: 34%; left: 68%; background-image: url('./Assets/img6.png'); }
+
+
+/* Espacios fuera del cuadro para las piezas faltantes en una fila */
+.piece-7, .piece-8, .piece-9 {
+    width: 32%;
+    height: 32%;
+    background-size: cover;
+}
+
+/* Ajusta las posiciones de las piezas faltantes en una fila */
+.piece-7 { top: 100%; left: 0; background-image: url('./Assets/img7.png'); }
+.piece-8 { top: 100%; left: 34%; background-image: url('./Assets/img8.png'); }
+.piece-9 { top: 100%; left: 68%; background-image: url('./Assets/img9.png'); }
+
+.puzzle-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #000;
+    box-sizing: border-box;
+}

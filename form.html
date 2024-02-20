@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="formStyle.css">
+</head>
+<body>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="contrasenha">Contraseña:</label>
+        <input type="password" id="contrasenha" name="contrasenha" required>
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+
+        <button type="button" onclick="crearUsuario()">Crear</button>
+        <button type="button" class="cancel" onclick="salir()">Salir</button>
+    </form>
+
+    <script src="formJs.js"></script>
+</body>
+</html>
