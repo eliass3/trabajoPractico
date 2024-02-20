@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
     const puzzleContainer = document.getElementById('puzzle-container');
-    let moves = 0;
 
     puzzleContainer.addEventListener('mousedown', handleMouseDown);
 
@@ -40,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (allPiecesInPlace) {
                 showCongratulations();
-                 window.location.href = 'fin.html';
+                window.location.href = 'fin.html';
             }
 
             document.removeEventListener('mousemove', handleMouseMove);
@@ -54,4 +53,5 @@ document.addEventListener('DOMContentLoaded', function () {
     function showCongratulations() {
         alert('¡Felicidades! Has completado el rompecabezas.');
     }
+
 });
