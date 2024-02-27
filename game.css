@@ -1,65 +1,73 @@
+/* Estilos para el cuerpo de la página */
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
+    display: flex; /* Flexbox: contenedor flexible */
+    align-items: center; /* Centra verticalmente los elementos dentro del cuerpo */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del cuerpo */
+    height: 100vh; /* Establece la altura al 100% del viewport */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    background-image: url('./Assets/bg.jpg'); /* Imagen de fondo para el cuerpo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el cuerpo */
+    background-position: center; /* Centra la imagen de fondo */
 }
 
+/* Estilos para el contenedor del rompecabezas */
 .puzzle-container {
-    position: relative;
-    width: 40vw;
-    height: 40vw;
-    margin: 10vh 0;
+    position: relative; /* Establece la posición relativa para que las piezas absolutas se ubiquen en relación con este contenedor */
+    width: 40vw; /* Ancho del contenedor del rompecabezas como un porcentaje del viewport */
+    height: 40vw; /* Altura del contenedor del rompecabezas como un porcentaje del viewport */
+    margin: 10vh 0; /* Márgenes superior e inferior del contenedor */
 }
 
+/* Estilos para las piezas del rompecabezas */
 .puzzle-piece {
-    position: absolute;
-    border: 2px solid #ddd; 
-    border-radius: 8px; 
-    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    background-size: cover;
-    box-sizing: border-box;
+    position: absolute; /* Establece la posición absoluta para que las piezas puedan superponerse */
+    border: 2px solid #ddd; /* Borde de las piezas */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave en transformación, color del borde y sombra al hacer hover */
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo de las piezas */
+    box-sizing: border-box; /* Ajusta el modelo de caja para incluir el borde en el tamaño total */
 }
 
+/* Efecto al hacer hover sobre las piezas */
 .puzzle-piece:hover {
-    transform: scale(1.1);
-    border-color: #666; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.1); /* Escala las piezas al hacer hover */
+    border-color: #666; /* Cambia el color del borde al hacer hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra al hacer hover */
 }
 
-/* Piezas dentro del cuadro */
+/* Estilos para las piezas dentro del cuadro del rompecabezas */
 .piece-1, .piece-2, .piece-3, .piece-4, .piece-5, .piece-6, .piece-7, .piece-8, .piece-9 {
-    width: 32%;
-    height: 32%;
+    width: 32%; /* Ancho de las piezas dentro del cuadro */
+    height: 32%; /* Altura de las piezas dentro del cuadro */
 }
 
-.piece-1 { top: 0; left: 10; background-image: url('./Assets/img1.png'); }
-.piece-2 { top: 0; left: 34%; background-image: url('./Assets/img2.png'); }
-.piece-3 { top: 0; left: 68%; background-image: url('./Assets/img3.png'); }
-.piece-4 { top: 34%; left: 0; background-image: url('./Assets/img4.png'); }
-.piece-5 { top: 34%; left: 34%; background-image: url('./Assets/img5.png'); }
-.piece-6 { top: 34%; left: 68%; background-image: url('./Assets/img6.png'); }
-
+/* Posiciones y fondos de las piezas dentro del cuadro */
+.piece-1 { top: 0; left: 10; background-image: url('./Assets/img1.webp'); }
+.piece-2 { top: 0; left: 34%; background-image: url('./Assets/img2.webp'); }
+.piece-3 { top: 0; left: 68%; background-image: url('./Assets/img3.webp'); }
+.piece-4 { top: 34%; left: 0; background-image: url('./Assets/img4.webp'); }
+.piece-5 { top: 34%; left: 34%; background-image: url('./Assets/img5.webp'); }
+.piece-6 { top: 34%; left: 68%; background-image: url('./Assets/img6.webp'); }
 
 /* Espacios fuera del cuadro para las piezas faltantes en una fila */
 .piece-7, .piece-8, .piece-9 {
-    width: 32%;
-    height: 32%;
-    background-size: cover;
+    width: 32%; /* Ancho de las piezas fuera del cuadro */
+    height: 32%; /* Altura de las piezas fuera del cuadro */
+    background-size: cover; /* Ajusta el tamaño de la imagen de fondo para las piezas fuera del cuadro */
 }
 
-/* Ajusta las posiciones de las piezas faltantes en una fila */
-.piece-7 { top: 100%; left: 0; background-image: url('./Assets/img7.png'); }
-.piece-8 { top: 100%; left: 34%; background-image: url('./Assets/img8.png'); }
-.piece-9 { top: 100%; left: 68%; background-image: url('./Assets/img9.png'); }
+/* Posiciones y fondos de las piezas fuera del cuadro */
+.piece-7 { top: 100%; left: 0; background-image: url('./Assets/img7.webp'); }
+.piece-8 { top: 100%; left: 34%; background-image: url('./Assets/img8.webp'); }
+.piece-9 { top: 100%; left: 68%; background-image: url('./Assets/img9.webp'); }
 
+/* Estilos para el marco del rompecabezas */
 .puzzle-frame {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 5px solid #000;
-    box-sizing: border-box;
+    position: absolute; /* Establece la posición absoluta para que el marco se superponga a las piezas */
+    top: 0; /* Sitúa el marco en la parte superior del contenedor del rompecabezas */
+    left: 0; /* Sitúa el marco en el borde izquierdo del contenedor del rompecabezas */
+    width: 100%; /* Ancho del marco al 100% del contenedor del rompecabezas */
+    height: 100%; /* Altura del marco al 100% del contenedor del rompecabezas */
+    border: 5px solid #000; /* Borde sólido negro del marco */
+    box-sizing: border-box; /* Ajusta el modelo de caja para incluir el borde en el tamaño total */
 }

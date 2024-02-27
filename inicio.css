@@ -1,57 +1,61 @@
+/* Estilo para el cuerpo del documento */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('Assets/ImagenInicio.jpg');
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .container {
-    text-align: center;
-    margin-top: 550px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 18px;
-    margin-top: 20px; /* ajusta el margen superior */
-    margin-right: 10px; /* ajusta el margen derecho */
-    margin-bottom: 20px; /* ajusta el margen inferior */
-    margin-left: 10px; /* ajusta el margen izquierdo */
-    cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-  }
-  
+  font-family: Arial, sans-serif; /* Establece la fuente del texto */
+  margin: 0; /* Elimina el margen exterior */
+  padding: 0; /* Elimina el relleno interior */
+  background-image: url('Assets/ImagenInicio.jpg'); /* Establece la imagen de fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+}
 
-  #creditsBtn {
-    position: fixed;
-    top: 10px; /* ajusta la distancia desde la parte superior de la pantalla */
-    right: 10px; /* ajusta la distancia desde el borde derecho de la pantalla */
-  }
+/* Estilo para el contenedor principal */
+.container {
+  text-align: center; /* Centra el contenido dentro del contenedor */
+  margin-top: 550px; /* Ajusta el margen superior para posicionar el contenido en la pantalla */
+}
 
-  #form {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  .credits {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    color: white;
-    border-radius: 5px;
-    display: none;
-  }
-  
-  
+/* Estilo para los botones */
+button {
+  padding: 10px 20px; /* Tamaño del padding para los botones */
+  font-size: 18px; /* Tamaño del texto de los botones */
+  margin-top: 20px; /* Ajusta el margen superior */
+  margin-right: 10px; /* Ajusta el margen derecho */
+  margin-bottom: 20px; /* Ajusta el margen inferior */
+  margin-left: 10px; /* Ajusta el margen izquierdo */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  background-color: #4CAF50; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Agrega bordes redondeados al botón */
+}
+
+/* Estilo específico para el botón con el ID 'creditsBtn' */
+#creditsBtn {
+  position: fixed; /* Fija la posición del botón en la pantalla */
+  top: 10px; /* Ajusta la distancia desde la parte superior de la pantalla */
+  right: 10px; /* Ajusta la distancia desde el borde derecho de la pantalla */
+}
+
+/* Estilo específico para el botón con el ID 'form' */
+#form {
+  position: fixed; /* Fija la posición del botón en la pantalla */
+  top: 10px; /* Ajusta la distancia desde la parte superior de la pantalla */
+  left: 10px; /* Ajusta la distancia desde el borde izquierdo de la pantalla */
+}
+
+/* Estilo para el estado hover (al pasar el ratón) de los botones */
+button:hover {
+  background-color: #45a049; /* Cambia el color de fondo al pasar el ratón sobre el botón */
+}
+
+/* Estilo para el contenedor de créditos */
+.credits {
+  position: fixed; /* Fija la posición del contenedor en la pantalla */
+  top: 10px; /* Ajusta la distancia desde la parte superior de la pantalla */
+  left: 10px; /* Ajusta la distancia desde el borde izquierdo de la pantalla */
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo con opacidad */
+  padding: 10px; /* Tamaño del relleno interior del contenedor */
+  color: white; /* Color del texto del contenedor */
+  border-radius: 5px; /* Agrega bordes redondeados al contenedor */
+  display: none; /* Inicialmente oculta el contenedor de créditos */
+}

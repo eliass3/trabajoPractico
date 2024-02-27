@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Registro</title>
-    <link rel="stylesheet" href="formStyle.css">
+    <link rel="stylesheet" href="formStyle.css"> <!-- Vincula la hoja de estilos externa (formStyle.css) al documento -->
 </head>
 <body>
     <form>
+        <!-- Campo de entrada para el nombre -->
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
 
+        <!-- Campo de entrada para el apellido -->
         <label for="apellido">Apellido:</label>
         <input type="text" id="apellido" name="apellido" required>
 
+        <!-- Campo de entrada para el correo electrónico -->
         <label for="correo">Correo:</label>
         <input type="email" id="correo" name="correo" required>
 
+        <!-- Campo de entrada para la contraseña -->
         <label for="contrasenha">Contraseña:</label>
         <input type="password" id="contrasenha" name="contrasenha" required>
 
+        <!-- Menú desplegable para seleccionar el sexo -->
         <label for="sexo">Sexo:</label>
         <select id="sexo" name="sexo" required>
             <option value="masculino">Masculino</option>
@@ -27,10 +32,13 @@
             <option value="otro">Otro</option>
         </select>
 
+        <!-- Botón para crear un usuario, llama a la función 'crearUsuario()' al hacer clic -->
         <button type="button" onclick="crearUsuario()">Crear</button>
+
+        <!-- Botón de cancelar, llama a la función 'salir()' al hacer clic, tiene una clase 'cancel' -->
         <button type="button" class="cancel" onclick="salir()">Salir</button>
     </form>
 
-    <script src="formJs.js"></script>
+    <script src="formJs.js"></script> <!-- Vincula el archivo JavaScript externo (formJs.js) al documento -->
 </body>
 </html>

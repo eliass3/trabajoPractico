@@ -4,24 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interfaz de Usuario Interactiva</title>
-  <link rel="stylesheet" href="inicio.css">
+  <link rel="stylesheet" href="inicio.css"> <!-- Vincula la hoja de estilos externa (inicio.css) al documento -->
 </head>
 <body>
 
+  <!-- Contenedor principal -->
   <div class="container">
+    <!-- Botón para iniciar el juego -->
     <button id="startBtn">Iniciar el Juego</button>
+
+    <!-- Botón para ver los créditos -->
     <button id="creditsBtn">Créditos</button>
+
+    <!-- Botón para cargar un juego -->
     <button id="loadBtn">Cargar Juego</button>
+
+    <!-- Botón para salir del juego -->
     <button id="exitBtn">Salir</button>
+
+    <!-- Botón para iniciar sesión (o redirigir a un formulario de inicio de sesión) -->
     <button id="form">Login</button>
   </div>
 
+  <!-- Contenedor de créditos, inicialmente oculto -->
   <div class="credits" id="credits">
+    <!-- Lista de nombres -->
     <p> Jose Laconich</p>
     <p> Elias Moreno</p>
     <p> Andrea Gimenez</p>
   </div>
 
+  <!-- Vincula el archivo JavaScript externo (inicio.js) al documento -->
   <script src="inicio.js"></script>
 </body>
 </html>
